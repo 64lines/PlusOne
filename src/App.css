@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #474747;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,81 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.plus-one-button {
+  position: absolute;
+  width: 177px;
+  height: 177px;
+  left: 57px;
+  top: 385px;
+
+  background: #a0df82;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 97px;
+}
+
+.minus-one-button {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  left: 194px;
+  top: 562px;
+  font-size: 50px;
+
+  background: #e88c8c;
+}
+
+.reset-button {
+  position: absolute;
+  width: 75px;
+  height: 73px;
+  left: 120px;
+  top: 677px;
+
+  background: #b4d7f1;
+}
+
+.button {
+  display: flex;
+  font-family: "Noto Mono";
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.counter-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  top: 225px;
+  justify-content: center;
+}
+
+.counter {
+  font-family: "Noto Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 94px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #c1bdbd;
+}
+
+.reload-image {
+  width: 36px;
+  height: 36px;
+  left: 139px;
+  top: 696px;
 }
 
 .App-link {

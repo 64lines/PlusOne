@@ -1,23 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import reload from "./reload.png";
+import "./App.css";
+import { loadCount } from "./App.utils";
 
 function App() {
+  const [count, setCount] = useState<number>(loadCount());
+
+  const handlePlusOne = () => {
+    setCount(count + 1);
+  }
+
+  const handleMinusOne = () => {
+    count > 0 ? setCount(count - 1) : setCount(count);
+  }
+
+  const handleReset = () => {
+    setCount(0);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="counter-container">
+          <span className="counter">{count}</span>
+        </div>
+        <div className="plus-one-button button" onClick={handlePlusOne}>+1</div>
+        <div className="minus-one-button button" onClick={handleMinusOne}>-1</div>
+        <div className="reset-button button" onClick={handleReset}>
+          <img src={reload} className="reload-image" alt="Reload"/>
+        </div>
       </header>
     </div>
   );
