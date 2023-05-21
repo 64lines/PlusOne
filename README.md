@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# PlusOne Tally Counter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+After noticing that counter apps on the Play Store have too many ads to be usable, I decided to build one on my own, this design is based on digital tally counters and includes the feature to remove counts if needed. This was a short 1 hour project for a Friday night that allowed me to also create a template for mobile projects using Ionic and Android Studio.
+
+## Technologies
+- ReactJS
+- TypeScript
+- Ionic
 
 ## Available Scripts
 
